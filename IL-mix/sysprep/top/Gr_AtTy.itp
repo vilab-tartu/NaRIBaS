@@ -1,0 +1,4 @@
+[ atomtypes ]
+;   type      mass    charge    ptype     sig         eps
+     Grl      12.01    0.00       A     0.3550      0.29288
+     Grr      12.01    0.00       A     0.3550      0.29288

@@ -1,0 +1,7 @@
+[ moleculetype ]
+; name  nrexcl
+Pr          3
+[ atoms ]
+;   nr  type resnr residu  atom  cgnr      charge	mass
+    1    Pr    1     Pr    Pr    1        -1.0000      35.453
+

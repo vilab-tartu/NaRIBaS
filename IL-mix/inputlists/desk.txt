@@ -1,0 +1,9 @@
+numberofionpairs list:
+#1 -- number of ion pairs
+#2 -- cube edge, lattice paramater
+#3 -- mole fraction of the second anion
+
+ion list:
+#1 -- abbreviation
+#2 -- effective radius
+#3 -- ion title used in the topology

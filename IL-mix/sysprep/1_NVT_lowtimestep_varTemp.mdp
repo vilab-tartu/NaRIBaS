@@ -1,0 +1,50 @@
+; RUN CONTROL PARAMETERS
+constraints              = h-bonds
+integrator               = md
+dt                       = 0.0005
+nsteps                   = 200000 ; 100 ps 
+energy_grps              = Cation Anion1 Anion2
+
+; OUTPUT CONTROL OPTIONS
+nstcomm                  = 500
+nstlog                   = 500
+nstenergy                = 500
+nstxout-compressed       = 500
+compressed-x-precision   = 1000
+compressed-x-grps        = Cation Anion1 Anion2
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff-scheme            = Verlet
+nstlist                  = 20
+ns_type                  = grid  
+pbc                      = xyz
+rlist                    = 1.5
+periodic_molecules       = no
+vdw-type                 = cut-off
+vdw-modifier             = Potential-shift
+rvdw                     = 1.5
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+coulombtype              = PME
+rcoulomb                 = 1.5
+fourierspacing           = 0.12
+pme_order                = 4
+epsilon_r                = 1.0
+; Dispersion correction
+DispCorr	         = EnerPres
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+tcoupl                   = v-rescale
+tc-grps	                 = System
+tau_t                    = 0.5
+ref_t                    = SED_temperature_name_SED
+Pcoupl                   = no
+Pcoupltype               = isotropic
+tau_p                    = 1.0
+ref_p                    = 1.0
+compressibility          = 4.5e-5
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen_vel                  = yes
+gen_temp                 = 100
+gen_seed                 = 473529
