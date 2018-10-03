@@ -1,0 +1,13 @@
+######
+a VERSION
+distances:
+
+2.90
+
+surface charges:
+0.00
+16.00
+-16.00
+
+distances:
+
