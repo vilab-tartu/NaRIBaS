@@ -1,0 +1,61 @@
+
+Mara's Accruement of Relevant Algorithms
+----------------------------------------
+
+This package is a hodge-podge collection of algorithms and data sets I have 
+written in Python during the past years. Most have been used in one way or 
+another in our scientific work during that period. Some parts are finished, 
+as in known-to-work, and some parts are unfinished, as in utterly-unreliable. 
+The responsibility of using it lands therefore squarely on the shoulders of 
+each and every such brave person. To put it in other words, this package is
+distributed as-is under the GNU General Public License found in the file 
+LICENSE.
+
+That being said, I sincerely hope that this package or some part of it will 
+be of some further use to somebody besides me. Naturally the focus of this
+package reflects my past research activities, namely NMR signal interpretation
+and MD simulations. For this end I have written modules that can be used for 
+example to convert data files from one format to another or to calculate 
+various parameters or otherwise manipulate data. A quick glance of the modules 
+included gives:
+
+Atom        -- Molecular primitives, starting from atoms and building up to 
+               polypeptides etc. Can be used to build or store molecules.
+
+aux         -- Auxiliary functions. List intersections, quicksort etc.
+
+Biology     -- At the moment only parse_sequence().
+
+Interface   -- Front-end to external programs such as Pales.
+
+IO          -- Input/output interface for different data formats, e.g. PDB.
+
+Library     -- Dictionaries and translation codeces used to convert from
+               one naming convention to another.
+
+Linguistics -- Actual translators to do the job.
+
+Logic       -- Simple wrapper functions for chaining together complex 
+               logical expressions.
+
+Math        -- Mathematical algorithms.
+
+mpi         -- Multi-processor interface. (untested)
+
+NMR         -- NMR specific data structures. Dipolar coupligns etc.
+
+Physics     -- Algorithms to calculate various physical quantities from the 
+               center of mass to electrostatic potentials.
+
+svd         -- Implementation of Singular Value Decomposition.
+
+If you have any suggestion or questions, you can always try to drop me an 
+e-mail (m.j.louhivuori@rug.nl), eventhough I do not know whether I will have 
+the time to actually make any improvements. On the other hand, if you have 
+done any corrections and/or written new additions, I would be delighted to 
+receive them and hopefully add them to the package.
+
+Happy hacking!
+
+-martti-
+

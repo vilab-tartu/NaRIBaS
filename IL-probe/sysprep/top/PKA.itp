@@ -1,0 +1,7 @@
+[ moleculetype ]
+; name  nrexcl
+PKA          3
+[ atoms ]
+;   nr  type resnr residu  atom  cgnr      charge	mass
+    1   PKA    1     PKA   PKA    1        1.0000       39.0983
+

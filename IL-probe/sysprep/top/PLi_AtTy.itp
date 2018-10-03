@@ -1,0 +1,3 @@
+[ atomtypes ]
+;   type      mass    charge    ptype   sigma         epsilon
+    PLi       6.941    1.00       A     1.25992e-01   2.61500e+01

@@ -1,0 +1,7 @@
+[ moleculetype ]
+; name  nrexcl
+PLi          3
+[ atoms ]
+;   nr  type resnr residu  atom  cgnr      charge	mass
+    1   PLi    1    PLi    PLi     1        1.0000       6.941
+

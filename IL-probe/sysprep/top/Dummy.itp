@@ -1,0 +1,9 @@
+; .top file for Gromacs
+
+[ moleculetype ]
+; name  nrexcl
+Du    3
+
+[ atoms ]
+;   nr  type resnr residu  atom  cgnr     charge     mass
+    1    Du    1     Du     Du    1       0.000     500.0

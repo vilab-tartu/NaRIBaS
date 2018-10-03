@@ -1,0 +1,7 @@
+TITLE     Potassium caion
+CRYST1    1.000   1.000   1.000  90.00  90.00  90.00 P 1           1
+MODEL     1
+ATOM      1  K+  K+      1       0.000   0.000   0.000  0.00  0.00
+END
+TER
+ENDMDL

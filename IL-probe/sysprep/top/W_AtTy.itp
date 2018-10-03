@@ -1,0 +1,5 @@
+[atomtypes]
+;water
+;   type      mass    charge    ptype     sig         eps
+     OW      15.9994 -0.8476      A     0.315400      0.64870 
+     HW      1.00079  0.42380     A     0.000000      0.00000

@@ -1,0 +1,7 @@
+[ moleculetype ]
+; name  nrexcl
+K+          3
+[ atoms ]
+;   nr  type resnr residu  atom  cgnr      charge	mass
+    1    K+    1     K+    K+     1        1.0000       39.0983
+

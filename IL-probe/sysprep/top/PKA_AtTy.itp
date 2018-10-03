@@ -1,0 +1,3 @@
+[ atomtypes ]
+;   type      mass    charge    ptype   sigma         epsilon
+    PKA       39.0983  1.00       A     4.93463e-01   1.37235e-03
