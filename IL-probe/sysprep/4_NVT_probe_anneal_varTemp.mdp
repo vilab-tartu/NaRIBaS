@@ -1,0 +1,72 @@
+; RUN CONTROL PARAMETERS
+constraints              = all-bonds
+integrator               = md
+dt                       = 0.002
+nsteps                   = 200000 ; 0.4 ns 
+energy_grps              = Cation Anion Cathode Anode Probe
+freezegrps               = Anode Cathode Probe
+freezedim                = Y Y Y Y Y Y Y Y N 
+
+; OUTPUT CONTROL OPTIONS
+nstcomm                  = 5000
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 5000
+nstenergy                = 5000
+nstxout-compressed       = 5000
+compressed-x-precision   = 5000
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff-scheme		 = verlet
+nstlist                  = 40
+ns_type                  = grid  
+pbc                      = xy
+rlist                    = 1.45
+rcoulomb                 = 1.45
+vdw-modifier             = Potential-shift
+rvdw                     = 1.45
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+coulombtype              = PME
+fourierspacing           = 0.12
+pme_order                = 4
+ewald_rtol               = 1e-05
+ewald_geometry           = 3dc
+table-extension          = 3
+epsilon_r                = 1.6
+
+; WALLS
+nwall                    = 2
+wall-atomtype            = Wr Wl
+wall-type                = 12-6
+wall-ewald-zfac          = 5
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+tcoupl                   = v-rescale
+tc-grps	                 = Cation Anion  Cathode Anode  Probe
+tau_t                    = 0.5    0.5    0.5     0.5    0.5
+annealing                = single single single  single single
+annealing-npoints        = 3      3      3       3      3
+annealing-time           = 0 150 300 0 150 300 0 150 300 0 150 300 0 150 300; ps
+annealing-temp           = SED_temperature_name_SED SED_temperature_replica_name_SED SED_temperature_name_SED SED_temperature_name_SED SED_temperature_replica_name_SED SED_temperature_name_SED SED_temperature_name_SED SED_temperature_replica_name_SED SED_temperature_name_SED SED_temperature_name_SED SED_temperature_replica_name_SED SED_temperature_name_SED SED_temperature_name_SED SED_temperature_replica_name_SED SED_temperature_name_SED
+ref_t                    = SED_temperature_name_SED SED_temperature_name_SED SED_temperature_name_SED SED_temperature_name_SED SED_temperature_name_SED
+Pcoupl                   = no
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen_vel                  = no
+gen_temp                 = SED_temperature_name_SED
+gen_seed                 = 473529
+
+; COM PULLING          
+; Pull type: no, umbrella, constraint or constant_force
+pull                     = yes
+pull_coord1_type         = constraint
+pull_coord1_geometry     = direction
+pull_coord1_dim          = N N Y
+pull_coord1_start        = yes
+pull_coord1_groups       = 0 1
+pull_ngroups             = 1
+pull_group1_name         = Probe
+pull_coord1_vec          = 0.0 0.0 -1.0
+pull_coord1_rate         = 0.0; nm/ps

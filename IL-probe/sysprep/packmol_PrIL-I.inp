@@ -1,0 +1,39 @@
+#
+# Simulationbox with two electrodes and IL
+#
+
+tolerance 3.0
+filetype pdb
+output packmol.pdb
+seed SED_seed_SED
+add_box_sides 1.5
+
+structure SED_dir_systempreparation_SED/top/SED_electrode_name_left_SED.pdb
+  number 1
+  center
+  fixed SED_xbox12_SED SED_ybox12_SED SED_pos_left_electrode_SED 0. 0. 0.
+end structure
+
+structure SED_dir_systempreparation_SED/top/SED_electrode_name_right_SED.pdb
+  number 1
+  center
+  fixed SED_xbox12_SED SED_ybox12_SED SED_pos_right_electrode_SED 0. 0. 0.
+end structure
+
+structure SED_dir_systempreparation_SED/top/SED_cation_name_SED.pdb 
+  number SED_cation_num_SED
+  inside box 0.0 0.0 SED_zbox_left_SED SED_xbox_SED SED_ybox_SED SED_zbox_right_SED
+end structure
+
+structure SED_dir_systempreparation_SED/top/SED_anion_name_SED.pdb 
+  number SED_anion_num_SED
+  inside box 0.0 0.0 SED_zbox_left_SED SED_xbox_SED SED_ybox_SED SED_zbox_right_SED
+end structure
+
+structure SED_dir_systempreparation_SED/top/SED_probe_name_SED.pdb 
+  number 1
+  centerofmass
+  fixed SED_xpos_SED SED_ypos_SED SED_zpos_SED SED_xrot_SED SED_yrot_SED SED_zrot_SED
+end structure
+
+
