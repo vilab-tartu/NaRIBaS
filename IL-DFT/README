@@ -1,0 +1,21 @@
+The NaRIBaS scripts are in the DFT folder.
+
+They are executed with commands:
+./naribas STEP1-optimization.sh
+./naribas STEP2-single_point.sh
+./naribas STEP3-database.sh
+
+NB! Orca program directory needs to be specified in the STEPs, else jobs will not run.
+
+Each step has an associated task file in DFT folder:
+The first STEP is responsible for the geometry optimization of ionic pairs.
+The second steps conducts single point calculations with three different methods.
+The third step indexes some properties of interest in a json format database file.
+
+The input lists are in DFT/inputlists folder.
+The calculation template input file and starting geometries are in DFT/sysprep.
+DFT/source folder contains the sourcecode for NaRIBaS
+
+And finally, the results are saved in Experiments_DFT folder.
+Example calculation results and database are attached as an archive.
+
