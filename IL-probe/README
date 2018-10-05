@@ -1,0 +1,4 @@
+First, you should change the permissions for "naribas" and all scripts in folder "source" as well as for "packmol" in "sysprep" folder.
+
+They are executed with commands:
+./naribas PrIL-I_input_STEP1-preparation.sh 
