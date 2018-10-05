@@ -1,0 +1,44 @@
+;
+;	File was generated 
+;	By user: Vladislav Ivanistsev
+;	At date: Thu May 8 11:48:59 2014
+;
+; Include forcefield parameters
+
+#define _FF_OPLS
+#define _FF_OPLSAA
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               3               yes             0.5     0.5
+
+;;; LOAD ATOM TYPES
+#include "SED_dir_systempreparation_SED/top/SED_cation_name_SED_AtTy_OPLSAA.itp"
+#include "SED_dir_systempreparation_SED/top/SED_anion_name_SED_AtTy_OPLSAA.itp"
+#include "SED_dir_systempreparation_SED/top/SED_additive_name_SED_AtTy.itp"
+#include "SED_dir_systempreparation_SED/top/SED_probe_name_SED_AtTy.itp"
+#include "SED_dir_systempreparation_SED/top/SED_electrode_SED_AtTy.itp"
+
+;;; LOAD OPLS FF
+#include "SED_dir_systempreparation_SED/top/ffnonbonded.itp"
+#include "SED_dir_systempreparation_SED/top/ffbonded.itp"
+#include "SED_dir_systempreparation_SED/top/gbsa.itp"
+
+;;; LOAD MOLECULES *.itp
+#include "SED_dir_systempreparation_SED/top/SED_cation_name_SED_OPLSAA.itp"
+#include "SED_dir_systempreparation_SED/top/SED_anion_name_SED_OPLSAA.itp"
+#include "SED_dir_systempreparation_SED/top/SED_additive_name_SED.itp"
+#include "SED_dir_systempreparation_SED/top/SED_probe_name_SED.itp"
+#include "electrode_local.itp"
+
+[ system ]                             
+; Name                                 
+Probe at an interface
+                                      
+[ molecules ]
+; Compound               #mols
+ SED_electrode_left_SED SED_electrodeatoms_SED 
+ SED_electrode_right_SED SED_electrodeatoms_SED
+ SED_cation_r_name_SED SED_cation_num_SED
+ SED_anion_r_name_SED SED_anion_num_SED
+ SED_probe_name_SED 1
