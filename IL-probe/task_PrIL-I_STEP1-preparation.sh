@@ -57,8 +57,8 @@ echo Number of anions $anion_num_name
 echo Number of cations $cation_num_name
 
 # Define path for storing configurations / simulation data
-fullpath_start=$electrode_name/$cation_name$anion_name/$additive_name$mol_fraction/$probe_name/$temperature_name/$version_name/configuration/$pull_distance_start_name/
-fullpath_temp=$cation_name$anion_name$additive_name$mol_fraction$probe_name$temperature_name$version_name
+fullpath_start=$electrode_name/$cation_name$anion_name/$additive_name$mol_fraction/$probe_name/$temperature_name/$version_name/$replica_name/configuration/$pull_distance_start_name/
+fullpath_temp=$cation_name$anion_name$additive_name$mol_fraction$probe_name$temperature_name$version_name/$replica_name
 
 mkdir -p $dir_experiments/$fullpath_start
 mkdir -p $dir_temp/$fullpath_temp

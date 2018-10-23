@@ -1,8 +1,8 @@
 ; RUN CONTROL PARAMETERS
 constraints              = all-bonds
 integrator               = md
-dt                       = 0.0005
-nsteps                   = 200000 ; 100 ps 
+dt                       = 0.001
+nsteps                   = 100000 ; 100 ps 
 energy_grps              = Cation Anion Cathode Anode Probe
 freezegrps               = Anode Cathode Probe
 freezedim                = Y Y Y Y Y Y Y Y Y
@@ -34,7 +34,7 @@ pme_order                = 6
 ewald_rtol               = 1e-05
 ewald_geometry           = 3dc
 table-extension          = 3
-epsilon_r                = 100
+epsilon_r                = 1
 
 ; WALLS
 nwall                    = 2
@@ -51,5 +51,5 @@ Pcoupl                   = no
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
-gen_temp                 = 350
+gen_temp                 = SED_temperature_name_SED
 gen_seed                 = 473529
