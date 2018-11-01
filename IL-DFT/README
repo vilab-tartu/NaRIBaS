@@ -6,6 +6,7 @@ They are executed with commands:
 ./naribas STEP3-database.sh
 
 NB! Orca program directory needs to be specified in the STEPs, else jobs will not run.
+NB! naribas file requires permissions to operate, which can be given with a command: chmod 755 ./naribas
 
 Each step has an associated task file in DFT folder:
 The first STEP is responsible for the geometry optimization of ionic pairs.
