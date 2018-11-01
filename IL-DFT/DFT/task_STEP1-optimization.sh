@@ -45,5 +45,5 @@ mv $cation_name$anion_name.inp $dir_experiments/$fullpath/
 cd $dir_experiments/$fullpath/
 
 # Execute the calculation
-#$dir_orca/orca $cation_name$anion_name.inp > $cation_name$anion_name.out
+$dir_orca/orca $cation_name$anion_name.inp > $cation_name$anion_name.out
 
