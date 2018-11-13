@@ -1,5 +1,7 @@
 # NaRIBaS
 
+Read the publication (open access) in: https://doi.org/10.3390/computation6040057 
+
 Unix-based preparation and analysis toolbox for Nanomaterials and Room Temperature Ionic Liquids in Bulk and Slab.
 
 NaRIBaS provides a framework that decouples user input parameter and terminal based command lines. NaRIBaS does not replace a simulation software and specific analysis tools like Gromacs, but it allows iterative repetition of tasks while changing specific input parameter.
