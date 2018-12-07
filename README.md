@@ -26,4 +26,4 @@ Python (for the analyses)
 
 # References
 
-E. Roos Nerut, K. Karu, I. Voroshylova, K. Kirchner, T. Kirchner, M. Fedorov, V. Ivaništšev, NaRIBaS — A Scripting Framework for Computational Modeling of Nanomaterials and Room Temperature Ionic Liquids in Bulk and Slab, Computation. 6 (2018) 57. doi:10.3390/computation6040057.
+E. Roos Nerut, K. Karu, I. Voroshylova, K. Kirchner, T. Kirchner, M. Fedorov, V. Ivaništšev, NaRIBaS — A Scripting Framework for Computational Modeling of Nanomaterials and Room Temperature Ionic Liquids in Bulk and Slab, Computation. 6 (2018) 57. [doi:10.3390/computation6040057](https://doi.org/10.3390/computation6040057).
