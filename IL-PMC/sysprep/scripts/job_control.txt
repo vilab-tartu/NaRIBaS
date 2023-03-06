@@ -1,0 +1,17 @@
+<net charge>
+0
+</net charge>
+<periodicity along A, B, and C vectors>
+.true.
+.true.
+.false.
+</periodicity along A, B, and C vectors>
+<atomic densities directory complete path>
+SED_PATH_SED
+</atomic densities directory complete path>
+<charge type>
+DDEC6
+</charge type>
+<compute BOs>
+.true.
+</compute BOs>
