@@ -8,7 +8,7 @@ These scripts generate inputs, run calculations, and analyze results described i
 
 Original results are available on demand from vladislav.ivanistsev@ut.ee.
 
-ASE database pmc10.db and analysis10.jpynb contain all data and scripts to reproduce https://arxiv.org/abs/2301.13681 and show additional analyses.
+In Analysis folder, ASE database (pmc8.db) and Jupyter notebook (analysis8.jpynb) contain all data and scripts to reproduce Figures and Table from https://arxiv.org/abs/2301.13681.
 
 ## Software installation
 
