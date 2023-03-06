@@ -6,9 +6,9 @@ These scripts generate inputs, run calculations, and analyze results described i
 
 ## Results and Analysis
 
-Original results are available on demand from vladislav.ivanistsev@ut.ee.
+Original results are available on demand from vladislav.ivanistsev@ut.ee. Publication Figures are stored in Figures folder.
 
-In Analysis folder, ASE database (pmc8.db) and Jupyter notebook (analysis8.jpynb) contain all data and scripts to reproduce Figures and Table from https://arxiv.org/abs/2301.13681.
+In Analysis folder, ASE database (pmc8.db) and Jupyter notebook (analysis8.jpynb) contain all data and scripts needed to reproduce two Figures and Table from https://arxiv.org/abs/2301.13681.
 
 ## Software installation
 
