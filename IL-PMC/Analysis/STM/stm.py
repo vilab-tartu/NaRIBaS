@@ -1,4 +1,3 @@
-# Creates: 2d.png, 2d_I.png, line.png, dIdV.png
 from ase.dft.stm import STM
 from gpaw import GPAW, PW, FermiDirac
 from ase.io import write, read
@@ -6,10 +5,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from ase.visualize.plot import plot_atoms
 
-
 slab=read('Au_fcc111_6,6,4_C53N_sys.xyz')
 slab.set_pbc([True, True, False])
-
 
 calc = GPAW(mode='pw',
 #            h=0.16,
@@ -57,5 +54,3 @@ ax2.set_yticks(np.arange(0, 101, 20))
 ax2.set_yticklabels(np.arange(0,11, 2), fontsize=8)
 ax2.set_aspect('equal')
 f.savefig("STM.png", dpi=600)
-
-
