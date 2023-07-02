@@ -7,8 +7,11 @@ These scripts generate inputs, run calculations, and analyze results described i
 ## Cloning from this repository
 
 git clone -n --depth=1 --filter=tree:0 https://github.com/vilab-tartu/NaRIBaS
+
 cd NaRIBaS
+
 git sparse-checkout set --no-cone IL-PMC
+
 git checkout
 
 ## Results and Analysis
