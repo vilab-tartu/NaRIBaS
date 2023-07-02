@@ -24,6 +24,16 @@ Python (for the analyses)
 
 [Packmol](http://www.ime.unicamp.br/~martinez/packmol/)
 
+# Cloning from this repository
+
+git clone -n --depth=1 --filter=tree:0 https://github.com/vilab-tartu/NaRIBaS
+
+cd NaRIBaS
+
+git sparse-checkout set --no-cone SPECIFIC_PROJECT_LIKE_IL-PMC
+
+git checkout
+
 # References
 
 E. Roos Nerut, K. Karu, I. Voroshylova, K. Kirchner, T. Kirchner, M. Fedorov, V. Ivaništšev, NaRIBaS — A Scripting Framework for Computational Modeling of Nanomaterials and Room Temperature Ionic Liquids in Bulk and Slab, Computation. 6 (2018) 57. [doi:10.3390/computation6040057](https://doi.org/10.3390/computation6040057).
