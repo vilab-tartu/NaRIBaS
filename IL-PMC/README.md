@@ -4,6 +4,13 @@
 
 These scripts generate inputs, run calculations, and analyze results described in the "Potential of Monolayer Charge" preprint: https://arxiv.org/abs/2301.13681.
 
+## Clonning from this repository
+
+git clone -n --depth=1 --filter=tree:0 https://github.com/vilab-tartu/NaRIBaS
+cd NaRIBaS
+git sparse-checkout set --no-cone IL-PMC
+git checkout
+
 ## Results and Analysis
 
 Actual results are available on demand from vladislav.ivanistsev@ut.ee.
