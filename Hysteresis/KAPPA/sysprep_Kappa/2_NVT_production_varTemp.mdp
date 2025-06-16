@@ -1,0 +1,66 @@
+; RUN CONTROL PARAMETERS
+constraints              = h-bonds
+integrator               = md
+dt                       = 0.001
+nsteps                   = 1000000 ; 1000 ps 
+energy_grps              = Ion
+freezegrps               = Electrode
+freezedim                = Y Y Y 
+
+; OUTPUT CONTROL OPTIONS
+nstcalclr                = 1
+nstcomm                  = 500
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 500
+nstenergy                = 500
+nstxtcout                = 500
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff_scheme            = Verlet
+nstlist                  = 40
+ns_type                  = grid  
+pbc                      = xy
+periodic_molecules       = no
+vdw_modifier             = Potential-shift
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+coulombtype              = PME
+rcoulomb                 = 1.92
+rvdw                     = 1.92
+fourierspacing           = 0.12
+pme_order                = 4
+ewald_rtol               = 1e-05
+ewald_geometry           = 3dc
+table_extension          = 3
+optimize_fft             = yes
+epsilon_r                = 1.6
+lincs_iter        = 2   
+lincs_order       = 8    
+
+; wallswalls
+nwall                    = 2
+wall_atomtype            = WA WA
+wall_type                = 12-6
+wall_ewald_zfac          = 3
+wall_density      = 300 300
+wall_r_linpot     = 0.1   
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+tcoupl                   = v-rescale
+tc_grps	                 = System
+tau_t                    = 0.5
+ref_t                    = SED_temperature_name_SED
+Pcoupl                   = no
+Pcoupltype               = semiisotropic
+tau_p                    = 1 
+compressibility          = 4.5e-5 4.5e-5
+ref_p                    = 1.0 1.0
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen_vel                  = no
+gen_temp                 = SED_temperature_name_SED
+gen_seed                 = 473529
+
+

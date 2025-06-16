@@ -1,0 +1,20 @@
+#
+# Simulationbox with one electrode and n counter-ions
+#
+
+tolerance 3.2
+filetype pdb
+output packmol.pdb
+seed SED_seed_SED
+add_box_sides 
+
+structure ./top/SED_electrode_name_SED.pdb
+  number 1
+  center
+  fixed SED_xbox12_SED SED_ybox12_SED SED_zbox12_SED 0. 0. 0.
+end structure
+
+structure ./top/SED_ion_name_SED.pdb 
+  number SED_ion_num_SED
+  inside box 0.0 0.0 SED_zbox_left_SED SED_xbox_SED SED_ybox_SED SED_zbox_right_SED
+end structure

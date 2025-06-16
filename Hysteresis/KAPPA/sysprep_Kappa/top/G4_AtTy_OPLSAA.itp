@@ -1,0 +1,7 @@
+[ atomtypes ]
+;name   bond_type     mass     charge   ptype   sigma         epsilon
+ gc3	  2     12.01100     0.320       A    3.50000e-01  2.76144e-01
+ gh1      1      1.00800     0.000       A    2.50000e-01  1.25520e-01
+ gos      7     15.99940    -0.640       A    2.90000e-01  5.86150e-01
+ Li+      1        6.941     1.00        A     2.1260e-01   7.6480e-02
+

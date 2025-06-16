@@ -1,0 +1,3 @@
+[ atomtypes ]
+; name  at.nr     mass   charge  ptype  sigma        epsilon
+I        53    126.90450 -1.000    A    5.40000e-01  2.92880e-01

@@ -1,0 +1,7 @@
+[ moleculetype ]
+; molname	nrexcl
+LAr		1
+
+[ atoms ]
+; id at type res nr residu name at name cg nr charge   mass
+  1    LAr     1        LAr       LAr     1   -1.000  100.80

@@ -1,0 +1,4 @@
+[ atomtypes ]
+; name  at.nr     mass   charge  ptype  sigma        epsilon
+Br         35  79.9040  -1.0000      A  3.97000e-01  8.60000e-01
+

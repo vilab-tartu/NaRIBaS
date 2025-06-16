@@ -1,0 +1,44 @@
+FFs are present for:
+BF4
+BMIm
+BMPyr
+BPy
+Cl
+DCA
+EMIm
+FEP
+FSI
+G4 (Li Glyme)
+Gr (graphene electrode)
+LAr, TMr, WA (LJ spheres)
+Li+
+N2214
+P4 (phosphonium with 66614 carbon chains)
+PF6
+TFSI
+
+SCN (NEW!)
+
+inputlist:
+
+Cl	0.163	Cl	-1	Cl
+BF4	0.2	BF	-1	B
+FSI	0.299	NS	-1	NBT
+DCA	0.245	NC	-1	N3A
+PF6	0.221	PF	-1	P
+TFSI	0.312	NSC	-1	NBT
+FEP	0.38	FP	-1	P3
+BMIm	0.322	Im	+1	C2
+BMPyr	0.305	Pyr	+1	N3
+BPy	0.328	Py	+1	NA
+N2214	0.313	Am	+1	N3
+
+EMIm	0.32	Im	+1	CR   (NEW! estimated radius?)
+
+G4	0.480	G4	+1	Li+  (NB it is run with separate NaRIBaS task, STEPchelate)
+
+TMr	0.494	TMr	+0.7070	SCr  (LJ dummy cation)
+
+SCN	0.2	SCN	-1	CK   (NEW! estimated radius)
+
+

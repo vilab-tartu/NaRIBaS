@@ -1,0 +1,10 @@
+#!/bin/bash
+find /gpfs/helios/home/balong/Naribas/NaRIBaS_Data/Experiments_Kappa/Gr/ -type d | while read d; do 
+  # Check if the directory is a leaf (has no subdirectories)
+  if [ -z "$(find "$d" -mindepth 1 -type d | head -n 1)" ]; then 
+    # If the file is not found in the directory, echo it
+    if [ ! -f "$d/NVT_lowtimestep.gro" ]; then 
+      echo "$d"
+    fi
+  fi
+done

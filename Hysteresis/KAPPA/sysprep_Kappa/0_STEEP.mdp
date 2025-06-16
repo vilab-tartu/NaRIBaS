@@ -1,0 +1,18 @@
+; RUN CONTROL PARAMETERS
+integrator               = steep
+tinit                    = 000
+dt                       = 0.001
+nsteps                   = 10000 ; 10ps
+comm-mode                = Linear
+energy_grps              = Ion 
+freezegrps               = Electrode
+freezedim                = Y Y Y
+
+; OUTPUT CONTROL OPTIONS 
+nstcomm                  = 10
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 500
+nstenergy                = 50
+nstxtcout                = 0

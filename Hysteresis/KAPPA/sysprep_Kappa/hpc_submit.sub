@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#SBATCH --job-name AM6-rep-4
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 10
+#SBATCH -t 72:00:00
+
+module load gromacs/2018-intel
+module load openmpi-2.0.1
+
+mpirun -np 10 gmx_mpi mdrun -deffnm NVT -multi 10
+

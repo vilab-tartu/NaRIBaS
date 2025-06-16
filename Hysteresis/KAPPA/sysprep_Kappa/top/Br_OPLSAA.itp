@@ -1,0 +1,23 @@
+[ moleculetype ]
+; name       nrexcl
+Br                3
+
+[ atoms ]
+;  nr   type  resnr  residu   atom   cgnr    charge
+    1   Br        1  Br       Br        1   -1.0000
+
+[ bonds ]
+;  ai    aj   func    b0        kb
+
+[ constraints ]
+;  ai    aj   func    b0
+
+[ angles ]
+;  ai    aj    ak   func    th0        cth
+
+[ dihedrals ]
+;  ai    aj    ak    al   func    coefficients
+
+[ pairs ]
+;   ai   aj   func
+

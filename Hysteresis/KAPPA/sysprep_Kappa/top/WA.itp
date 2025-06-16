@@ -1,0 +1,7 @@
+[ moleculetype ]
+; Name  nrexcl
+  WA      3
+
+[ atoms ]
+;   nr    type  resnr  residue  atom   Gnr   charge  mass
+    1      WA     1     WA       WA     1      0     12.011  

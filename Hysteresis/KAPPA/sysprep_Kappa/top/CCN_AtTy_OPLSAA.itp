@@ -1,0 +1,6 @@
+[ atomtypes ]
+; name  at.nr     mass   charge  ptype  sigma        epsilon
+C3A         6  12.0110  -0.9100      A  3.55000e-01  2.92880e-01
+CN          6  12.0110   0.6550      A  3.30000e-01  2.76140e-01
+NC          7  14.0010  -0.6850      A  3.20000e-01  7.11280e-01
+

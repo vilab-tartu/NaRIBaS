@@ -1,0 +1,4 @@
+[ atomtypes ]
+;name mass charge ptype
+;   type      mass        charge  ptype  sigma     epsilon
+    LAr     100.80       -1.000    A   10.00e-01  1.8698e+00s

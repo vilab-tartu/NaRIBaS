@@ -1,0 +1,55 @@
+# turn on lights 0 and 1
+light 0 on
+light 1 on
+light 2 off
+light 3 off
+display nearclip set 0
+
+# position the stage and axes
+#axes location lowerleft
+axes location off
+stage location off
+
+# position and turn on menus
+menu main     move 1681 512
+menu animate  move 125  30
+menu edit     move 125  225
+menu tracker  move 125  520
+menu display  move 395  30
+menu graphics move 250 512
+menu color    move 125  225
+menu files    move 2150 512
+menu molecule move 0    512
+menu labels   move 661  29
+menu render   move 125  525
+menu sequence move 629  0
+
+# # position and turn on menus
+# menu main     move 7   785
+# menu animate  move 125 30
+# menu edit     move 125 225
+# menu tracker  move 125 520
+# menu display  move 395 30
+# menu graphics move 912 332
+# menu color    move 125 225
+# menu files    move 825 502
+# menu molecule move 125 525
+# menu labels   move 912 29
+# menu render   move 125 525
+# menu sequence move 881 0
+
+menu main     on
+#menu animate  on
+#menu edit     on
+#menu tracker  on
+#menu display  on
+menu graphics on
+#menu color    on
+#menu labels   on
+#menu renderer on
+#menu molecule on
+menu files    on
+
+after idle {
+    render POV3 vmdscene.pov povray +W2048 +H1456 -Ivmdscene.pov -Ovmdscene.png +D +X +A +FN
+}

@@ -1,0 +1,7 @@
+[ moleculetype ]
+; Name  nrexcl
+  Gr       3
+
+[ atoms ]
+;   nr    type  resnr  residue  atom   Gnr   charge                       mass
+    1     Gr      1    Gr       Gr     1     0.17343749999999999445     120.11  
