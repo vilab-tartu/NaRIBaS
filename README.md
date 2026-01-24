@@ -26,7 +26,7 @@ Python (for the analyses)
 
 # Cloning from this repository
 
-git clone -n --depth=1 --filter=tree:0 https://github.com/vilab-tartu/NaRIBaS
+git clone -n --depth=1 --filter=tree:0 https://github.com/doublelayer/NaRIBaS
 
 cd NaRIBaS
 
